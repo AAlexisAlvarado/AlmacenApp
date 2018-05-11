@@ -1,4 +1,4 @@
-package pe.edu.tecsup.almacenapp;
+package pe.edu.tecsup.almacenapp.activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -21,14 +21,18 @@ import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
+import pe.edu.tecsup.almacenapp.R;
 import pe.edu.tecsup.almacenapp.models.ResponseMessage;
 import pe.edu.tecsup.almacenapp.services.ApiService;
 import pe.edu.tecsup.almacenapp.services.ApiServiceGenerator;
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
